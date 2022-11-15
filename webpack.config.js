@@ -48,7 +48,7 @@ function createHTTPSConfig() {
               },
               {
                 type: 2,
-                value: "hubs.local"
+                value: "localhost"
               }
             ]
           }
@@ -67,7 +67,7 @@ function createHTTPSConfig() {
   }
 }
 
-const defaultHostName = "hubs.local";
+const defaultHostName = "localhost";
 const host = process.env.HOST_IP || defaultHostName;
 const port = process.env.HOST_PORT || 9090;
 
@@ -87,7 +87,7 @@ module.exports = env => {
       public: `${host}:${port}`,
       publicPath: process.env.BASE_ASSETS_PATH || "",
       useLocalIp: true,
-      allowedHosts: [host],
+      allowedHosts: ["all"],
       headers: {
         "Access-Control-Allow-Origin": "*"
       },

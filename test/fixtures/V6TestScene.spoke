@@ -306,7 +306,7 @@
         {
           "name": "gltf-model",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/crater.glb",
+            "src": "https://localhost:9090/test-assets/crater.glb",
             "attribution": null
           }
         },
@@ -852,7 +852,7 @@
         {
           "name": "image",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/spoke-logo.png",
+            "src": "https://localhost:9090/test-assets/spoke-logo.png",
             "controls": false,
             "alphaMode": "blend",
             "alphaCutoff": 0.5,
@@ -901,7 +901,7 @@
         {
           "name": "video",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/landing-video.webm",
+            "src": "https://localhost:9090/test-assets/landing-video.webm",
             "controls": true,
             "autoPlay": true,
             "loop": true,
@@ -964,7 +964,7 @@
         {
           "name": "audio",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/Cathedral_With_Music.mp3",
+            "src": "https://localhost:9090/test-assets/Cathedral_With_Music.mp3",
             "controls": true,
             "autoPlay": true,
             "loop": true
@@ -1026,7 +1026,7 @@
         {
           "name": "spawner",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/camera.glb",
+            "src": "https://localhost:9090/test-assets/camera.glb",
             "applyGravity": false
           }
         }
@@ -1168,7 +1168,7 @@
         {
           "name": "particle-emitter",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/spoke-logo.png",
+            "src": "https://localhost:9090/test-assets/spoke-logo.png",
             "startColor": "#ff0000",
             "middleColor": "#00ff5d",
             "endColor": "#0034ff",
@@ -1394,7 +1394,7 @@
         {
           "name": "gltf-model",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/camera.glb",
+            "src": "https://localhost:9090/test-assets/camera.glb",
             "attribution": null
           }
         },
@@ -1463,7 +1463,7 @@
         {
           "name": "image",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/spoke-logo.png",
+            "src": "https://localhost:9090/test-assets/spoke-logo.png",
             "controls": true,
             "alphaMode": "opaque",
             "alphaCutoff": 0.5,
@@ -1516,7 +1516,7 @@
         {
           "name": "video",
           "props": {
-            "src": "https://hubs.local:9090/test-assets/landing-video.webm",
+            "src": "https://localhost:9090/test-assets/landing-video.webm",
             "controls": true,
             "autoPlay": true,
             "loop": true,

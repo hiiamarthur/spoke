@@ -117,7 +117,7 @@ test("Editor should load V1TestScene", withPage(`/projects/new?template=${v1Test
   const model1Entity = entities.find(e => e.name === "Model1");
   t.is(model1Entity.index, 5);
   const model1Props = model1Entity.components.find(c => c.name === "gltf-model").props;
-  t.is(model1Props.src, "https://hubs.local:9090/test-assets/duck.glb");
+  t.is(model1Props.src, "https://localhost:9090/test-assets/duck.glb");
   t.truthy(model1Entity.components.find(c => c.name === "walkable"));
   t.truthy(model1Entity.components.find(c => c.name === "collidable"));
   t.deepEqual(model1Props.attribution, null);
@@ -129,7 +129,7 @@ test("Editor should load V1TestScene", withPage(`/projects/new?template=${v1Test
   const model2Entity = entities.find(e => e.name === "Ceiling Fan");
   t.is(model2Entity.index, 6);
   const model2Props = model2Entity.components.find(c => c.name === "gltf-model").props;
-  t.is(model2Props.src, "https://hubs.local:9090/test-assets/ceiling-fan.glb");
+  t.is(model2Props.src, "https://localhost:9090/test-assets/ceiling-fan.glb");
   t.falsy(model2Entity.components.find(c => c.name === "walkable"));
   t.falsy(model2Entity.components.find(c => c.name === "collidable"));
   t.deepEqual(model2Props.attribution, {
@@ -163,7 +163,7 @@ test("Editor should load V1TestScene", withPage(`/projects/new?template=${v1Test
   const spawnerEntity = entities.find(e => e.name === "Spawner1");
   t.is(spawnerEntity.index, 10);
   const spawnerProps = spawnerEntity.components.find(c => c.name === "spawner").props;
-  t.is(spawnerProps.src, "https://hubs.local:9090/test-assets/camera.glb");
+  t.is(spawnerProps.src, "https://localhost:9090/test-assets/camera.glb");
 
   const spotLightEntity = entities.find(e => e.name === "Spot Light1");
   t.is(spotLightEntity.index, 11);
@@ -191,19 +191,19 @@ test("Editor should load V1TestScene", withPage(`/projects/new?template=${v1Test
   const image1Entity = entities.find(e => e.name === "Image");
   t.is(image1Entity.index, 13);
   const image1Props = image1Entity.components.find(c => c.name === "image").props;
-  t.is(image1Props.src, "https://hubs.local:9090/test-assets/spoke-logo.png");
+  t.is(image1Props.src, "https://localhost:9090/test-assets/spoke-logo.png");
   t.is(image1Props.projection, "flat");
 
   const image2Entity = entities.find(e => e.name === "Image 1");
   t.is(image2Entity.index, 16);
   const image2Props = image2Entity.components.find(c => c.name === "image").props;
-  t.is(image2Props.src, "https://hubs.local:9090/test-assets/spoke-logo.png");
+  t.is(image2Props.src, "https://localhost:9090/test-assets/spoke-logo.png");
   t.is(image2Props.projection, "360-equirectangular");
 
   const video1Entity = entities.find(e => e.name === "Video");
   t.is(video1Entity.index, 14);
   const video1Props = video1Entity.components.find(c => c.name === "video").props;
-  t.is(video1Props.src, "https://hubs.local:9090/test-assets/landing-video.webm");
+  t.is(video1Props.src, "https://localhost:9090/test-assets/landing-video.webm");
   t.is(video1Props.projection, "flat");
   t.is(video1Props.controls, false);
   t.is(video1Props.autoPlay, true);
@@ -222,7 +222,7 @@ test("Editor should load V1TestScene", withPage(`/projects/new?template=${v1Test
   const video2Entity = entities.find(e => e.name === "Video 1");
   t.is(video2Entity.index, 15);
   const video2Props = video2Entity.components.find(c => c.name === "video").props;
-  t.is(video2Props.src, "https://hubs.local:9090/test-assets/landing-video.webm");
+  t.is(video2Props.src, "https://localhost:9090/test-assets/landing-video.webm");
   t.is(video2Props.projection, "360-equirectangular");
   t.is(video2Props.controls, true);
   t.is(video2Props.autoPlay, true);

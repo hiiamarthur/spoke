@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
 
 export default function withPage(path, timeout = 60000) {
-  const url = new URL(path, "https://hubs.local:9090");
+  const url = new URL(path, "https://localhost:9090");
 
   return async (t, run) => {
     const browser = await puppeteer.launch({

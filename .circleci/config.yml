@@ -26,8 +26,8 @@ jobs:
             libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates \
             fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
       - run:
-          name: Add hubs.local to /etc/hosts
-          command: echo 127.0.0.1 hubs.local | sudo tee -a /etc/hosts
+          name: Add localhost to /etc/hosts
+          command: echo 127.0.0.1 localhost | sudo tee -a /etc/hosts
       - run: yarn
       - run:
           name: Start Test Server
