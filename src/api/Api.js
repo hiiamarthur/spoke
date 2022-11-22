@@ -19,7 +19,8 @@ import { RethrownError } from "../editor/utils/errors";
 const resolveUrlCache = new Map();
 const resolveMediaCache = new Map();
 
-const RETICULUM_SERVER = configs.RETICULUM_SERVER || document.location.hostname;
+// const RETICULUM_SERVER = configs.RETICULUM_SERVER || document.location.hostname;
+const RETICULUM_SERVER = "192.168.10.245:4000";
 
 // thanks to https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding
 function b64EncodeUnicode(str) {
@@ -66,7 +67,7 @@ export const proxiedUrlFor = url => {
 };
 
 export const scaledThumbnailUrlFor = (url, width, height) => {
-  if (configs.RETICULUM_SERVER.includes("localhost") && url.includes("localhost")) {
+  if (configs.RETICULUM_SERVER.includes("192.168.10.245") && url.includes("192.168.10.245")) {
     return url;
   }
 
